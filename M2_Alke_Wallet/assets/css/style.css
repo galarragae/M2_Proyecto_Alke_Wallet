@@ -1,0 +1,97 @@
+/* PALETA DE COLORES 
+Botones y acentos: #6F12F6
+Sombras: #D2B6FC
+Sombreado: #E1E1E1
+#070011
+#1C0045
+Fuente: https://www.figma.com/community/file/1228177538503873579
+*/
+
+body {
+  background-color: white;
+  font-family: "Google Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  }
+
+header{
+  padding: 30px;
+  background-color: #6F12F6;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+h1 .alkeHome{
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  text-align: center;
+  color: #E1E1E1;
+  text-decoration: none;
+}
+
+footer{
+  padding: 20px;
+  background-color: #6F12F6;
+  border-radius: 20px;
+  margin: 10px;
+  color: #E1E1E1;
+  text-align: center;
+}
+
+.carousel-caption{
+  /* arreglar!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+  background-color: black;
+  color: #E1E1E1;
+}
+
+main {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #E1E1E1;
+  border-radius: 20px;
+  margin: 5px 10px;
+  /* Cómo ajustar el contenido al ancho de la página? */
+}
+
+h2{
+  text-align: center;
+  margin-bottom: 30px;
+  /* En la página de Enviar dinero no toma el margin-bottom */
+}
+
+.disponible{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contacts{
+  margin-top: 50px;
+}
+
+.contactList {
+  border:2px;
+  border-color: black;
+}
+
+.contactList li{
+  list-style-type: none;
+  text-align: left;
+}
+
+.addcontact{
+  margin-bottom: 30px;
+}
+
+table .negative{
+  color: red;
+}
+
+table .positive {
+  color: green;
+}
+
+.centered-text{
+  text-align: center;
+}
