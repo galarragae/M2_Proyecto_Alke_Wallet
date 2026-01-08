@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Elizabeth Galarraga G." />
+  <title>Wallet: Menu Principal</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+
+  <!-- Mi CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <header class="d-flex justify-content-center" id="top">
+    <h1>
+      <a href="./home.html" class="alkeHome">Alke Wallet</a>
+    </h1>
+  </header>
+  <main class="col-md-6 mx-auto">
+    <section class="container">
+      <h2 class="mb-4">Menú Principal</h2>
+      <div class="disponible">
+        <p>Saldo disponible:</p>
+        <h3>$60.000</h3>
+      </div>
+      <div class="d-flex justify-content-center">
+        <!-- cambio de boton anchor por boton comun pra usar evento en JS -->
+        <button id="depositButton" class="btn btn-1 mt-2 mx-2" type="button">Depositar</button>
+        <button id="sendMoneyButton" class="btn btn-1 mt-2 mx-2" type="button">Enviar dinero</button>
+        <button id="transactionsButton" class="btn btn-1 text-nowrap mt-2 mx-2" type="button">Últimos
+          movimientos</button>
+      </div>
+    </section>
+  </main>
+  <footer class="col-md-6 mx-auto">
+    <div class="row">
+      <h5>Elizabeth Galarraga @ 2026</h5>
+      <h5 class="mt-2">Todos los derechos reservados</h5>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="./assets/js/menu.js"></script>
+</body>
+
+</html>

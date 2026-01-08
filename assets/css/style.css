@@ -1,0 +1,130 @@
+/* PALETA DE COLORES 
+Botones y acentos: #6F12F6
+Sombras: #D2B6FC
+Sombreado: #E1E1E1
+#070011
+#1C0045
+Fuente: https://www.figma.com/community/file/1228177538503873579
+*/
+
+body {
+  font-family: "Google Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  /* FONDO */
+  background: #1C0045;
+  background: -webkit-linear-gradient(180deg, rgba(28, 0, 69, 1) 0%, rgba(90, 8, 212, 1) 35%, rgba(225, 225, 225, 1) 100%);
+  background: -moz-linear-gradient(180deg, rgba(28, 0, 69, 1) 0%, #5a08d4 35%, rgba(225, 225, 225, 1) 100%);
+  background: linear-gradient(180deg, rgba(28, 0, 69, 1) 0%, rgba(90, 8, 212, 1) 35%, rgba(225, 225, 225, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1C0045", endColorstr="#E1E1E1", GradientType=0);
+}
+
+header {
+  padding: 30px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+h1 .alkeHome {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  text-align: center;
+  color: #E1E1E1;
+  text-decoration: none;
+}
+
+main {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-radius: 20px;
+  margin: 5px 10px;
+  background: rgba(225, 225, 225, 0.83);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+footer {
+  padding: 30px;
+  border-radius: 20px;
+  color: #E1E1E1;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  /* FONDO */
+  background: #1C0045;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.btn-1 {
+  background-color: #6F12F6;
+  color: #E1E1E1;
+  text-wrap: none;
+  border-color: none;
+}
+
+.btn-2 {
+  background-color: #b98ff4;
+  color: #E1E1E1;
+  text-wrap: none;
+  border-color: none;
+}
+
+a {
+  color: #6F12F6;
+}
+
+
+
+.carousel-caption {
+  /* arreglar!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+  background-color: black;
+  color: #E1E1E1;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  /* En la página de Enviar dinero no toma el margin-bottom */
+}
+
+.disponible {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contacts {
+  margin-top: 50px;
+}
+
+.contactList {
+  border: 2px;
+  border-color: black;
+}
+
+.contactList li {
+  list-style-type: none;
+  text-align: left;
+}
+
+.addcontact {
+  margin-bottom: 30px;
+}
+
+table .negative {
+  color: red;
+}
+
+table .positive {
+  color: green;
+}
+
+.centered-text {
+  text-align: center;
+}
