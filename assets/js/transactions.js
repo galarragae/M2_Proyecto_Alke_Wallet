@@ -1,0 +1,1 @@
+/* mostrar una lista con los movimientos realizados y reflejar los detalles de ultimas operaciones */

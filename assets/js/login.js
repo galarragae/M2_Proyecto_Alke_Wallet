@@ -1,19 +1,40 @@
-// Por defecto, un formulario recarga la página al enviarse
-// Queremos evitar eso para validar con JavaScript
+// Tomo el form por su id y "escucho" el evento submit (primer parámetro), function (anónima, segundo parámetro)
+// y "event" es un objeto automático, representa el evento que acaba de ocurrir (el nombre es libre, el concepto no)
 
-document.getElementById("loginForm").addEventListener("submit", function(event) {
-  event.preventDefault();
+document.getElementById("loginForm").addEventListener("submit", function (event) {
+  event.preventDefault(); //para evitar enviar el formulario y recargar la pág automáticamente
 
-  const emailIngresado = document.getElementById("loginEmail").value; // obtener el correo ingresado por usuario
-  const passwordIngresada = document.getElementById("loginPassword").value; // obtener la contraseña ingresada por usuario
+  // obtener datos ingresados por usuario // .trim() elimina espacios en blanco al inicio y al final
+  const emailIngresado = document.getElementById("loginEmail").value.trim();
+  const passwordIngresada = document
+    .getElementById("loginPassword")
+    .value.trim();
 
-  const emailCorrecto = "usuario@ejemplo.com"; // credenciales válidas simuladas!!!
+  // credenciales válidas simuladas
+  const emailCorrecto = "usuario@ejemplo.com";
   const passwordCorrecta = "1234";
 
-  if (emailIngresado === emailCorrecto && passwordIngresada === passwordCorrecta){
-    alert('Inicio de sesión exitoso');
-    window.location.href = "menu.html"; // para redirigir al Menú Principal
+  // preparar el modal (Bootstrap) del login
+  const modal = new bootstrap.Modal(document.getElementById("loginModal"));
+  const modalMessage = document.getElementById("loginModalMessage");
+
+  if (emailIngresado === emailCorrecto && passwordIngresada === passwordCorrecta) {
+    modalMessage.textContent = "Has iniciado sesión correctamente"; // mensaje dinámico
+    modal.show();
+
+    setTimeout(function () {
+      modal.hide();
+      window.location.href = "menu.html";
+    }, 2000);
+
+  } else if (emailIngresado === "" || passwordIngresada === "") {
+    modalMessage.textContent =
+      "Debes ingresar un email y contraseña para iniciar sesión";
+    modal.show();
+
   } else {
-    alert('Error en las credenciales. Intente nuevamente.');
+    modalMessage.textContent =
+      "Email y/o contraseña no válidos. Intenta nuevamente";
+    modal.show();
   }
 });
